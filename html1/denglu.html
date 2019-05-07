@@ -1,0 +1,129 @@
+<!DOCTYPE html >
+<html>
+	<head>
+		<title> i'm QQ </title>
+		<meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="11.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+            body{
+                width:100%;
+                background: rgb(20,68,197);
+
+                overflow: hidden;
+                position: relative;   
+            }
+            video{
+                height: 600px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -1280px;
+            }
+            .box-box{
+                width: 300px;
+                height: auto;
+                overflow: hidden;
+                padding: 40px;
+                box-shadow: 0 -15px 30px rgb(10,60,189);
+                border-radius: 5px;
+            }
+            dt{
+                font-size: 20px;
+                font-weight: bold;
+                text-align: center;
+                color:rgba(250,250,240, 0.9);
+                text-shadow: 0 0 1px rgb(0,50,180);
+                margin-bottom: 15px;
+            }
+            dl{
+                position: absolute;
+                display: block;
+                left:50%;
+                margin-left:-190px; 
+                margin-top:165px;
+            }
+            em{
+                font-size: 12px;
+            }
+            .input1{
+                height:24px;
+                line-height: 26px;
+                padding:8px 5%;
+                width:90%;
+                background:rgba(20,20,180,0.6);
+                border:0;
+                margin-bottom: 10px;
+                color:#fff
+            }
+            .input2{
+                width:100%;
+                height:42px;
+                border:0;
+                font-size: 16px;
+                background:rgba(0,0,180,0.7);
+                color:rgba(250,250,240, 0.9);
+            }
+            a{
+                color:rgba(250,250,240, 0.5);
+                text-decoration: none;
+                margin: 10px;
+                font-size: 15px;
+            }
+            .a1{
+                margin-left:150px;
+            }
+        </style>
+       	<script>
+	    </script> 
+    </head>
+    <body>
+         <div class="box">
+            <video src="mp4/bannerbg1.mp4" loop autoplay preload muted></video>
+            <dl class="box-box">
+                <dt>
+                    <strong>QQ登录</strong><br>
+                    <em>QQ International</em>
+                </dt>
+                <dd>
+                    <input type="text" class="input1" placeholder="请输入QQ账号" id="uid">
+                </dd>
+                <dd><input type="password" class="input1" placeholder="密码" id='upwd'></dd>
+                <dd><input type="button" class="input2" value="立即登录" onclick="login()"></dd>
+                <dd><a href="javascript:;" class="a1">忘记密码?</a><a href="javascript:;">注册QQ</a></dd>
+            </dl>
+         </div>
+         <script>
+            function login(){
+                var xhr=new XMLHttpRequest();
+                xhr.onreadystatechange=function(){
+                    if(xhr.readyState==4&&xhr.status==200){
+                        var result=xhr.responseText
+                        var resu = JSON.parse(result)
+                        console.log(resu.msg)
+                        console.log(resu.data[0].uname)
+                        if(resu.msg=="登录成功"){
+                            
+                            sessionStorage.setItem("uname",resu.data[0].uname)
+                            location.href="index.html"
+                        }else{
+                            alert("用户名或密码错误")
+                        }
+                    }
+                }
+                xhr.open("post","/user/login",true)
+                var formdata="uid="+uid.value+"&upwd="+upwd.value;
+                xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                xhr.send(formdata);
+            }
+         </script>
+	</body>
+</html>

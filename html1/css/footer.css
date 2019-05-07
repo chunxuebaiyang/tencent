@@ -1,0 +1,87 @@
+.footer{
+    width:100%;
+    background:#ecf0f1;
+}
+.footer_con{
+    margin:0 auto;
+    width:1200px;
+    min-height:200px;
+    background:url(../img/global/footer_logo.png) right 100px no-repeat;
+    position:relative;
+}
+.ico_online, .ico_pub, .ico_sina, .ico_wb, .ico_wx {
+    display: inline-block;
+    margin-right: 6px;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    background-image: url(../img/global/icon_foot_normal.png);
+    background-repeat: no-repeat;
+    margin-top: -4px;
+    margin-left: -2px;
+}
+.ico_sina {
+    background-position: -84px 0;
+}
+.ico_wx{
+    background-position: -28px 0;
+}
+.footer_con_wrap{
+    padding-top:35px;
+}
+.footer_con_wrap>div{
+    float: left;
+    padding-bottom:24px;
+    padding-left:50px;
+}
+.footer_con_wrap>.footer-one{
+    padding-left:15px;
+}
+.title{
+    font-size:20px;
+    color:#333;
+    font-weight:400;
+    margin-bottom:10px;
+}
+.link_list>li{
+    height:32px;
+    line-height:32px;
+}
+.link_list>li>a{
+    font-size:14px !important;
+    color:#747b81 !important;
+}
+.tencent_wx{
+    display: block;
+}
+.footer_links a{
+    font-size:14px !important;
+    color:#747b81 !important;
+}
+.footer_links>ul>li{
+    float:left;
+    border-right:1px #aaa solid;
+    padding:0 10px 0;
+}
+.footer_links{
+    margin-left:120px;
+    background:#ECF0F1;
+}
+.footer_copyright{
+    float: right;margin:20px;color:#747b81;font-size: 14px;margin-right: 110px;
+}
+.footer_links .footer_lin_a{
+    border:0
+}
+.weixin{
+    display: none;
+    position: absolute;
+    width: 261px;
+    height:295px !important;
+    top:-140px;
+    left:135px;
+    background-image:url(../img/global/weixin.png) ;
+}
+.link_list .tencent_wx:hover em{
+    display: block;
+}

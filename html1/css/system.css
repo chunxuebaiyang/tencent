@@ -1,0 +1,100 @@
+.main_box{
+    width: 1200px;
+    margin:99px auto 70px;
+    overflow: hidden;
+}
+.box{
+    width:1200px;
+    margin:10px auto 10px;
+    padding:15px 0 15px;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+.box ul li{
+    width: 202px;
+    height: 300px;
+    box-shadow: 3px 2px 30px rgba(0, 82, 217, .5);
+    float: left;
+    position: relative;
+    transition:all .6s ease-out;
+    text-align:center;
+    overflow: hidden;
+    margin-bottom:10px;
+}
+#d1{
+    margin-left:100px;
+}
+.box ul li h3{
+    padding-top:30px;
+    color:#333;
+    font-size:18px;
+}
+h3,p{
+    font-weight:normal
+}
+.box ul li p{
+    margin-top:7px;
+    color:#666;
+    font-size:14px
+}
+.box ul li img{
+    position:absolute;
+    left:60px;
+    bottom:80px;
+    width:50px;
+    height:50px;
+}
+.box ul li .sys_txt{
+    width:180px;
+    height:300px;
+    position:absolute;
+    left:200px;
+}
+.box ul .on{
+    width:400px;
+    height:300px;
+    text-align:left;
+}
+.box ul .on h3{
+    padding-left:40px;
+}
+.box ul .on p{
+    margin-left:20px;
+}
+.box ul .on img{
+    left:60px;
+    bottom:80px
+}
+.box ul .on .sys_txt{
+    right:0px;
+}
+.culture_title .title{
+    position:relative;
+    padding-bottom:18px;
+    color:#000;
+    font-size:20px;
+    font-weight:400;
+    font-family: 'Microsoft Yahei';
+}
+.title span{
+    font-size:18px;
+    color:#9e9d9d;
+    padding-left:10px;
+    font-family:arial;
+    border-left:2px solid #0052d9
+}
+.box{
+    content:"";
+    display:table;
+}
+#b1{
+    margin-left:100px;
+}
+.title{
+    animation:fadeInLeft 2S;
+}
+.box>ul{
+    animation:fadeIn 2S;
+}

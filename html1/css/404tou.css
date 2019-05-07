@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.wrap{
+    overflow: hidden;
+}
+.head_wrap{
+    position:fixed;
+    width:100%;
+    background-color: #0052d9;
+    z-index: 9999
+}
+.login{
+    display: inline-block;
+    height:27px;
+    width:203px;
+    margin:20px;
+}
+.menu_list, .menu_list li, .menu_list li a{
+    width:auto;
+    display: block;
+}
+.menu_list li a .c_line{
+    display: none;
+    height: 4px;
+    width: 80px;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 0;
+    transition: top 0.4s;
+}
+.menu_list{
+    height:83px;
+    position:absolute;
+    right:0;
+    top: 0;
+}
+.menu_list li{
+    float: left;
+}
+.menu_list li a{
+    position: relative;
+    float: left;
+    height: 73px;
+    padding: 0 30px;
+    line-height: 70px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menu_list li a:hover i{
+    
+    display: block;    
+}
+.wrap .head_wrap ul li .denglu{
+    height:70px;
+    margin-right:20px;
+}
+.denglu>button{
+    box-shadow: 0 -15px 30px rgb(10,60,189);
+    background:rgb(250,250,250);
+    border:0;
+    border-radius: 4px;
+    color:#0052d9;
+    padding:5px 10px;
+}

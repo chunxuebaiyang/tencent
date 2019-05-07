@@ -1,0 +1,83 @@
+
+            ._banner{
+                margin-top:165px;
+                margin-left:12%;
+            }
+            .a_banner{
+                background: #0052d9;
+                display: block;
+                position:absolute;
+                width:100px;
+                height:10px;
+                top:0px;
+                right:0px;
+            }
+            .wrap_404{
+                width:1200px;
+                margin:0 auto;
+            }
+            .com_wrap{
+                display: block;
+                width:770px;
+                margin:40px auto 120px;
+            }
+            .child_area{
+                display: block;
+                position:relative;
+                left:50px;
+            }
+            .child_avata{
+                float:left;
+                margin-right:20px;
+            }
+            .child_pic{
+                display:block;
+                height:152px;
+                width:160px;
+            }
+            .child_info{
+                font-size: 14px !important;
+                color:#7a7a7a;
+                line-height: 1.8 !important;
+            }
+            .name{
+                display: inline-block;
+                font-weight:700;
+                font-size: 16px;
+                height:48px;
+            }
+            .sex{
+                display: inline-block;
+                height:48px;
+                margin-bottom: 5px;
+            }
+            .links{
+                display: inline-block;
+            }
+            .links_a1{
+                float: left;
+                margin-right:10px;
+                width:34px;
+                background: url(img/404/icon_tencent_volunteer.jpg) no-repeat;
+            }
+            .links_a2{
+                width:34px;
+                background: url(img/404/icon_babyback.jpg) no-repeat;
+            }
+            .links_a1,.links_a2{
+                display: inline-block;
+                height:34px;
+                text-indent:-9999px;
+                overflow: hidden;
+                vertical-align: middle;
+            }
+            .link_derails{
+                float: right;
+                font-size: 15px;
+                color:#0052d9
+            }
+            .birth_date,.miss_date,.miss_address,.child_features{
+                font-size: 14px !important;
+                color:#7a7a7a;
+                line-height: 1.8 !important;
+            }

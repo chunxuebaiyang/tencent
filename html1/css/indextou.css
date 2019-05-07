@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol, ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/*tou*/
+.wrap{
+    overflow: hidden;
+}
+.head_wrap{
+    position: fixed;
+    /* position:absolute; */
+    width:100%;
+    background-color:rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: all 1s;
+}
+.bga{
+    background: #0052d9;
+}
+.login{
+    display: inline-block;
+    height:27px;
+    width:203px;
+    margin:20px;
+}
+.menu_list, .menu_list li, .menu_list li a{
+    width:auto;
+    display: block;
+}
+.menu_list li a .c_line{
+    display: none;
+    height: 4px;
+    width: 80px;
+    background: #fff;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -40px;
+    top: 0;
+    transition: top 0.4s;
+}
+.menu_list{
+    height:83px;
+    position:absolute;
+    right:0;
+    top: 0;
+}
+.menu_list li{
+    float: left;
+}
+.menu_list li a{
+    position: relative;
+    float: left;
+    height: 73px;
+    padding: 0 30px;
+    line-height: 70px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    box-sizing: border-box;
+}
+.menu_list li a:hover i{
+    
+    display: block;    
+}
+.wrap .head_wrap ul li .denglu{
+    height:70px;
+    margin-right:20px;
+}
+.denglu>button{
+    background:rgb(250,250,250);
+    border:0;
+    border-radius: 4px;
+    color:#0052d9;
+    padding:5px 10px;
+}
+
+/* 备注 */
+.fadeup{
+    top:200px;
+    opacity:0;
+    transition: all 0.8s ease-out;
+}
+.in{
+    top:0;
+    opacity: 1;
+}
+.fadedown{
+    top:-200px;
+    opacity:0;
+    transition: all 0.8s ease-out;
+}
+.in_down{
+    top:0;
+    opacity: 1;   
+}

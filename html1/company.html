@@ -1,0 +1,460 @@
+<!DOCTYPE html >
+<html>
+	<head>
+        <title>Tencent 腾讯 - 公司信息</title>
+        <meta name="author" content="Boye" />  
+		<meta name="keywords" content="" />  
+		<meta name="description" content="" />
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/indextou.css">
+        <link rel="stylesheet" href="css/company.css">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+        <link rel="stylesheet" href="11.css">
+		<style type="text/css">
+
+
+        </style>
+       	<script>
+            window.onscroll=function(){
+                var t = document.documentElement.scrollTop||document.body.scrollTop;
+                //服务部分
+                console.log(t)
+                var elem = $("#service");
+                if(t == 0){
+                    $(".wrap>div").attr("class","head_wrap");
+                }
+                if(t>0){
+                    $(".wrap>div").attr("class","head_wrap bga");
+                }
+            }
+	    </script> 
+    </head>
+    <body>
+         <div class="wrap">
+            <!--头-->
+            <div class="head_wrap">
+                <div style="display:block"></div>
+                <a href="index.html">
+                    <img src="img/global/logo.png" alt="" class="login">
+                </a>
+                <ul class="menu_list">
+                    <li><a href="company.html"><i class="c_line" style="display:block"></i>公司信息</a> </li>
+                    <li><a href="culture.html"><i class="c_line"></i>企业文化</a></li>
+                    <li><a href="system.html"><i class="c_line"></i>业务体系</a></li>
+                    <li><a href="404.html"><i class="c_line"></i>加入我们</a></li>
+                    <li><a href="denglu.html" class="denglu"><button>登录</button></a></li>
+                </ul>
+            </div>
+         </div>
+         <!--内容-->
+         <div class="main">
+            <div class="banner">
+                <div id="about_banner">
+                    <a>
+                        <span class="banner_img" style="background-color: #0052d9"></span>
+                    </a>
+                </div>
+                <div class="banner_main">
+                    <h3>公司信息 <span>ABOUT</span></h3>
+                    <ul class="banner_tab">
+                        <li onclick="mains(1)">
+                            <i class="icon_des"></i>
+                            <div class="info">
+                                <h4>公司简介</h4>
+                                <p>INTRODUCTION</p>
+                            </div>
+                            <span class="arrow arrow1" style="display:block" id="arrow1" ></span>
+                        </li>
+                        <li onclick="mains(2)">
+                            <i class="icon_stra"></i>
+                            <div class="info">
+                                <h4>公司动态</h4>
+                                <p>TRENDS</p>
+                            </div>
+                            <span class="arrow"  style="display:none" id="arrow2"></span>
+                        </li>
+                        <li onclick="mains(3)">
+                            <i class="icon_pro"></i>
+                            <div class="info">
+                                <h4>发展历程</h4>
+                                <p>HISTORY</p>
+                            </div>
+                            <span class="arrow" style="display:none" id="arrow3"></span>
+                        </li>
+                        <li onclick="mains(4)">
+                            <i class="icon_team"></i>
+                            <div class="info">
+                                <h4>管理团队</h4>
+                                <p>TEAM</p>
+                            </div>
+                            <span class="arrow" style="display:none" id="arrow4"></span>
+                        </li>
+                        <li onclick="mains(5)" class="icon_cul_show">
+                            <i class="icon_cul"></i>
+                            <div class="info">
+                                <h4>社会责任</h4>
+                                <p>RESPONSIBILITY</p>
+                            </div>
+                            <span class="arrow" style="display:none" id="arrow5"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about_main">
+                <!---->
+                <div class="about_des tab_content on" id="about1" style="display:block">
+                    <div class="cell_title">
+                        公司简介 <span>INTRODUCTION</span>
+                    </div>
+                    <div class="about_intro">
+                        <div class="img">
+                            <img src="img/shanda/intro.jpg" alt="">
+                        </div>
+                        <div class="intro">
+                            <p>腾讯，1998年11月诞生于中国深圳，是一家以互联网为基础的科技与文化公司。我们的使命是“通过互联网服务提升人类生活品质”。腾讯秉承着 “一切以用户价值为依归”的经营理念，为亿万网民提供优质的互联网综合服务。</p>
+                            <p>腾讯的战略目标是“连接一切”，我们长期致力于社交平台与数字内容两大核心业务：一方面通过微信与QQ等社交平台，实现人与人、服务及设备的智慧连接；另一方面为数以亿计的用户提供优质的新闻、视频、游戏、音乐、文学、动漫、影业等数字内容产品及相关服务。我们还积极推动金融科技的发展，通过普及移动支付等技术能力，为智慧交通、智慧零售、智慧城市等领域提供有力支持。</p>
+                            <p>腾讯希望成为各行各业的数字化助手，助力数字中国建设。在工业、医疗、零售、教育等各个领域，腾讯为传统行业的数字化转型升级提供“数字接口”和“数字工具箱”。我们秉持数字工匠精神，希望用数字创新提升每个人的生活品质。随着“互联网+”战略实施和数字经济的发展，我们通过战略合作与开放平台，与合作伙伴共建数字生态共同体，推进云计算、大数据、人工智能等前沿科技与各行各业的融合发展及创新共赢。多年来，腾讯的开放生态带动社会创业就业人次达数千万，相关创业企业估值已达数千亿元。</p>
+                            <p>腾讯的愿景是成为“最受尊敬的互联网企业”。我们始终坚守“科技向善”的初心，运用科技手段助力公益事业发展，并将社会责任融入每一个产品。2007年，腾讯倡导并发起了中国互联网第一家在民政部注册的全国性非公募基金会——腾讯公益慈善基金会。腾讯公益致力于成为“人人可公益的创连者”，以互联网核心能力推动公益行业的长远发展为己任。腾讯公益联合多方发起了中国首个互联网公益日——99公益日，帮助公益组织和广大爱心网友、企业之间形成良好的公益生态，让透明化的“指尖公益”融入亿万网民的生活。</p>
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <div class="about_pro tab_content" id="about2" style="display: none">
+                    <div class="cell_title">
+                        公司动态 <span>TRENDS</span>
+                    </div>
+                    <div class="about_pro_a"><a href="javascript:;">查看全部</a></div>
+                    <div class="about_pro_p">
+                        <p><a href="javascript:;"> 腾讯公布2018年第三季度业绩【PDF file】</a><span>2018/11/14</span></p>
+                        <p><a href="javascript:;"> 腾讯公布2018年第二季度及中期业绩【PDF file】</a><span>2018/08/15</span></p>
+                        <p><a href="javascript:;"> 腾讯公布2018年第一季度业绩【PDF file】</a><span>2018/05/16</span></p>
+                        <p><a href="javascript:;">腾讯公布2017年第四季度及全年业绩【PDF file】</a> <span>2018/03/21</span></p>
+                        <p><a href="javascript:;">腾讯公布2017年第三季度业绩【PDF file】</a> <span>2017/11/15</span></p>
+                        <p><a href="javascript:;"> 腾讯公布2018年第二季度及中期业绩【PDF file】</a><span>2017/08/16</span></p>
+                        <p><a href="javascript:;">腾讯公布2018年第一季度业绩【PDF file】</a> <span>2017/05/17</span></p>
+                        <p><a href="javascript:;"> 腾讯公布2016年第四季度及全年业绩【PDF file】</a><span>2017/03/22</span></p>
+                        <p><a href="javascript:;"> 腾讯公布2016年第三季度业绩【PDF file】</a><span>2016/11/24</span></p>
+                        <p><a href="javascript:;">索尼音乐与腾讯音乐续签中国大陆战略合作协议【PDF file】</a> <span>2016/10/14</span></p>
+                    </div>
+                </div>
+                <!---->
+                <div class="about_team tab_content about_history" id="about3" style="display: none">
+                    <div class="cell_title">
+                        发展历程 <span>HISTORY</span>
+                    </div>
+                    <div class="dev_list">
+                        <ul>
+                            <li class="dev_item first_item">
+                                <span class="year">2015</span>
+                                <div class="item_cont">
+                                    <span class="month">09</span>
+                                    <p class="item_txt">移动支付绑卡账户数超过2亿</p>
+                                    <span class="month">03</span>
+                                    <p class="item_txt">马化腾提出“互联网+”被写入政府工作报告成为国家战略</p>
+                                </div>
+                            </li>
+                            <li class="dev_item ">
+                                <span class="year">2014</span>
+                                <div class="item_cont">
+                                    <span class="month">03</span>
+                                    <p class="item_txt">QQ最高同时在线超过2亿</p>
+                                </div>
+                            </li>
+                            <li class="dev_item ">
+                                <span class="year">2013</span>
+                                <div class="item_cont">
+                                    <span class="month">09</span>
+                                    <p class="item_txt">市值突破1000亿</p>
+                                    <span class="month">08</span>
+                                    <p class="item_txt">手Q和微信发布游戏中心</p>
+                                    <span class="month">01</span>
+                                    <p class="item_txt">微信和WeChat总注册用户数突破3亿</p>
+                                </div>
+                            </li>
+                            <li class="dev_item ">
+                                <span class="year">2011</span>
+                                <div class="item_cont">
+                                    <span class="month">06</span>
+                                    <p class="item_txt">腾讯开发开放平台战略</p>
+                                    <span class="month">01</span>
+                                    <p class="item_txt">推出微信</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2010</span>
+                                <div class="item_cont">
+                                    <span class="month">03</span>
+                                    <p class="item_txt">QQ同时在线超过1亿</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2009</span>
+                                <div class="item_cont">
+                                    <span class="month">12</span>
+                                    <p class="item_txt">年收入超过100亿人民币</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2008</span>
+                                <div class="item_cont">
+                                    <span class="month">09</span>
+                                    <p class="item_txt">被纳入香港恒生指数成份股</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2007</span>
+                                <div class="item_cont">
+                                    <span class="month">09</span>
+                                    <p class="item_txt">成立腾讯公益慈善基金会</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2005</span>
+                                <div class="item_cont">
+                                    <span class="month">09</span>
+                                    <p class="item_txt">推出社交网络平台QQ空间</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2004</span>
+                                <div class="item_cont">
+                                    <span class="month">06</span>
+                                    <p class="item_txt">香港主板上市，股份代码为00700</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">2003</span>
+                                <div class="item_cont">
+                                    <span class="month">11</span>
+                                    <p class="item_txt">推出综合门户网站腾讯网</p>
+                                    <span class="month">08</span>
+                                    <p class="item_txt">推出休闲游戏平台“QQ游戏”</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">1999</span>
+                                <div class="item_cont">
+                                    <span class="month">02</span>
+                                    <p class="item_txt">腾讯QQ诞生</p>
+                                </div>
+                            </li>
+                            <li class="dev_item">
+                                <span class="year">1998</span>
+                                <div class="item_cont">
+                                    <span class="month">11</span>
+                                    <p class="item_txt">腾讯公司在深圳成立</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!---->
+                <div class="about_team tab_content" id="about4" style="display:none">
+                    <div class="cell_title">
+                        团队管理 <span>TEAM</span>
+                    </div>
+                    <div class="board_list"  id="arr1">
+
+                    </div>
+                </div>
+                <!---->
+                <div class="about_cul tab_content" id="about5" style="display:none">
+                    <div class="cell_title">
+                        社会责任 <span>RESPONSIBILITY</span>
+                    </div>                   
+                    <div class="charity_cont cont_1" >
+                        <ol class="charity_list" id="arr2">
+
+                        </ol>
+                        <div class="table_list">
+                            <a onclick="charity(1)" id="list1" class="tab_item" style="width:45px"><i>1</i></a>
+                            <a onclick="charity(2)" id="list2" class="tab_item" style="width:8px"><i>2</i></a>
+                            <a onclick="charity(3)" id="list3" class="tab_item" style="width:8px"><i>3</i></a>
+                            <a onclick="charity(4)" id="list4" class="tab_item" style="width:8px"><i>4</i></a>
+                            <a onclick="charity(5)" id="list5" class="tab_item" style="width:8px"><i>5</i></a>
+                            <a onclick="charity(6)" id="list6" class="tab_item" style="width:8px"><i>6</i></a>
+                            <a onclick="charity(7)" id="list7" class="tab_item" style="width:8px"><i>7</i></a>
+                            <a onclick="charity(8)" id="list8" class="tab_item" style="width:8px"><i>8</i></a>
+                            <a onclick="charity(9)" id="list9" class="tab_item" style="width:8px"><i>9</i></a>
+                            <a onclick="charity(10)" id="list10" class="tab_item" style="width:8px"><i>10</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <!--底部-->
+         <div class="footer">
+            <div class="footer_con">
+                <div class="footer_con_wrap">
+                    <div class="footer-list footer-one">
+                        <h4 class="title">关注我们</h4>
+                        <ul class="link_list">
+                            <li>
+                                <a href="javascript:;" target="_blank" class="tencent_wx"> <i class="ico_wx"></i> 微信<em class="weixin"></em></a>
+                                <a href="javascript:;" target="_blank" ><i class="ico_sina"></i>腾讯微博</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4 class="title">联系我们</h4>
+                        <ul class="link_list">
+                            <li><a href="javascript:;">客户服务</a></li>
+                            <li><a href="javascript:;">合作洽谈</a></li>
+                            <li><a href="javascript:;">服务采购</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4 class="title">加入我们</h4>
+                        <ul class="link_list">
+                            <li><a href="javascript:;">社会招聘</a></li>
+                            <li><a href="javascript:;">校园招聘</a></li>
+                            <li><a href="javascript:;">国际招聘</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <h4 class="title">法律信息</h4>
+                        <ul class="link_list">
+                            <li><a href="javascript:;">服务协议</a></li>
+                            <li><a href="javascript:;">隐私政策</a></li>
+                            <li><a href="javascript:;">知识产权</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_links" style="padding-bottom:30px;">
+                <ul >
+                    <li>
+                        <a href="javascript:;">法律声明</a>
+                     </li>
+                    <li>
+                        <a href="javascript:;">监督举报</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">网站地图</a>
+                    </li>
+                    <li class="footer_lin_a">
+                        <a href="javascript:;" target="_blank">粤网文【2017】6138-1456号</a>
+                    </li>
+                </ul>
+                <div class="footer_copyright">Copyright © 1998 - 2019 Tencent. All Rights Reserved.腾讯公司 版权所有</div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        function mains(a){
+            if($(`#arrow${a}`).is(":visible")){
+            }else{
+                 $(".arrow").css({"display":"none"})
+                $(".tab_content").css({"display":"none"})
+                let b=document.querySelector(`#arrow${a}`);
+                let c=document.querySelector(`#about${a}`);
+                b.style.display="block";
+                c.style.display="block";
+            }
+        }
+
+        $(function (){
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    var result=xhr.responseText;
+                    var arr=JSON.parse(result);
+                    let team='';
+                    for(var i=0;i<arr.length;i++){
+                    team+=`
+                        <div class="board_item">
+                            <i class="arrowii dw_arrow"></i>
+                            <div class="nameWarp">
+                                <h3 class="name">${arr[i].tname}</h3>
+                                <em class="duty">${arr[i].tjob}</em>
+                            </div>
+                            <p id="d${i}" class="txt" style="display:none">${arr[i].ttext}</p>
+                        </div>
+                    `
+                    };
+                    arr1.innerHTML=team;    
+                    $(".board_item").click(function(){
+                        $(this).children(".txt").slideToggle();
+                    })
+                };
+            };
+            xhr.open("get","/user/list",true);
+            xhr.send(null);
+        })
+
+        var res=2
+        function charity(a){
+            var b=document.querySelector(`#list${a}`)
+            var c=document.querySelector(`#item${a}`)
+            $(".tab_item").css({"width":"8px"})
+            $(".charity_item").css({"display":"none"})
+            b.style.width="45px";
+            c.style.display="block";
+            res=a
+        } 
+        var setnum=1
+        $(".icon_cul_show").click(function(){
+            
+            function resa(){
+                if(res>10){
+                    list10.style.width="8px";
+                    item10.style.display="none";
+                    list1.style.width="45px";
+                    item1.style.display="block";
+                    res=1
+                }else if(res>1){
+                    let b=document.querySelector(`#list${res}`);
+                    let c=document.querySelector(`#item${res}`);
+                    let d=document.querySelector(`#list${res-1}`);
+                    let e=document.querySelector(`#item${res-1}`);
+                    b.style.width="45px";
+                    d.style.width="8px";
+                    c.style.display="block";
+                    e.style.display="none";
+
+                }else{
+                    list10.style.width="8px";
+                    item10.style.display="none";
+                    list1.style.width="45px";
+                    item1.style.display="block";
+                    res=1
+                }
+                res++
+                setnum=0
+            }
+            if(setnum==1){
+            var set1=setInterval(resa,3000);}
+            else{
+                clearInterval(set1)
+            }
+        })
+        $(function(){
+            var xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=function(){
+                if(xhr.readyState==4&&xhr.status==200){
+                    var result=xhr.responseText;
+                    var arr=JSON.parse(result)
+                    let team='';
+                    for(var i=0;i<arr.length;i++){
+                    team+=`
+                            <li class="charity_item" id="item${i+1}" style="display:none;">
+                                <div class="char_detail">
+                                    <img class="charity_img" src="${arr[i].limg}" alt="">
+                                    <p class="charity_txt">${arr[i].ltext}</p>
+                                </div>
+                            </li>
+                    `
+                    };
+                    arr2.innerHTML=team
+                    item1.style.display="block";
+                };
+            };
+            xhr.open("get","/user/char",true);
+            xhr.send(null);
+        })
+    </script>
+	</body>
+	</html>
